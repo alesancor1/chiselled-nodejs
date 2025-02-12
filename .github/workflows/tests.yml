@@ -13,6 +13,7 @@ jobs:
       rock-repo: alesancor1/${{ github.event.repository.name }}
       rock-repo-commit: ${{ github.ref_name }}
       rockfile-directory: node18
+      arch-map: '{"amd64": ["ubuntu-latest"], "arm64": ["ubuntu-latest"]}'
 
   test:
     uses: canonical/oci-factory/.github/workflows/Test-Rock.yaml@main
