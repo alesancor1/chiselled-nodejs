@@ -7,7 +7,7 @@ jobs:
     uses: canonical/oci-factory/.github/workflows/Build-Rock.yaml@main
     with:
       oci-archive-name: "chiselled_node"
-      rock-repo: ${{ github.event.repository.name }}
+      rock-repo: alesancor1/${{ github.event.repository.name }}
       rock-repo-commit: ${{ github.ref_name }}
       rockfile-directory: node18
 
